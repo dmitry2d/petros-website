@@ -1,0 +1,27 @@
+.section-hero {
+
+
+}
+
+.section-hero-wrapper {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.section-hero-images {
+    display: flex;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+}
+.section-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-hero-images.slick-initialized {
+    visibility: visible;
+    opacity: 1;    
+}

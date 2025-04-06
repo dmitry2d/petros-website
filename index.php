@@ -9,13 +9,9 @@
 <?php 
 
     get_template_part('templates/section', 'header');
-
-?>
-
-hello
-
-<?php
-
+    get_template_part('templates/section', 'common');
+    get_template_part('templates/section', 'top');
+    get_template_part('templates/section', 'hero');
     get_template_part('templates/section', 'footer');
 
 ?>

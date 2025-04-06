@@ -1,24 +1,24 @@
 @font-face {
     font-family: 'Favorite';
     src: url('./book.ttf');
-    font-weight: light;
+    font-weight: 200;
     font-style: normal;
 }
 @font-face {
     font-family: 'Favorite';
     src: url('./regular.ttf');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'Favorite';
     src: url('./medium.ttf');
-    font-weight: medium;
+    font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: 'Favorite';
     src: url('./bold.ttf');
-    font-weight: bold;
+    font-weight: 800;
     font-style: normal;
 }
