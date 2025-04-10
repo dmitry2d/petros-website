@@ -30,6 +30,12 @@
         }
     }
 
-        
-
 </style>
+
+<script>
+    $(window).on('keyup', e => {
+        if (e.keyCode == 27) {
+            $(window).trigger('escKey');
+        }
+    });
+</script>
