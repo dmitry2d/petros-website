@@ -20,10 +20,16 @@
         /* fonts */
         --title-font: 400 42px/1.3 var(--title-font-family);
         --main-font: 200 21px/1.3 var(--main-font-family);
-        --numbers-font-size: 70px;
-        --bottom-menu-title-font-size: 28px;
-        
-
     }
+
+    /* responsive */
+    @media screen and (max-width: 1440px) {
+        :root {
+            --title-font: 400 32px/1.3 var(--title-font-family);
+            --main-font: 200 19px/1.3 var(--main-font-family);
+        }
+    }
+
+        
 
 </style>

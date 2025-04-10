@@ -61,7 +61,7 @@
     text-decoration: none;
 }
 .section-bottom-menu-container > li > a {
-    font-size: var(--bottom-menu-title-font-size);
+    font-size: 28px;
     color: var(--theme-color-secondary);
 }
 .section-bottom-menu-container li > ul {

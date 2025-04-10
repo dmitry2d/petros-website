@@ -8,37 +8,33 @@
 .section-top-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .section-top-logo {
     flex-grow: 1;
-
+    height: 70px;
 }
 .section-top-logo img {
-    height: 70px;
+    height: 100%;
+    object-fit: contain;
 }
 
 
 .section-top-menu-wrapper {
     display: flex;
-    align-items: center;    
-    flex-grow: 1;
-    justify-content: space-between;
-}
-
-.section-top-menu {
-    /* flex-grow: 1; */
+    align-items: center;
 }
 
 
 .section-top-menu-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     list-style-type: none;
-    justify-content: flex-start;
     padding: 0;
+    margin: 0;
 }
 .section-top-menu-container > li,
 .section-top-button {
@@ -50,7 +46,6 @@
 }
 .section-top-button {
     border: 2px solid var(--theme-color-secondary);
-    margin-left: 20px;
 }
 
 .section-top-menu-container > li:hover,
@@ -72,7 +67,11 @@
     background-size: 15px;
 }
 
+.section-top-button-wrapper {
+    display: block;
+}
 .section-top-button a {
+    text-wrap: nowrap;
 }
 .section-top-menu .sub-menu {
     position: absolute;
@@ -104,3 +103,29 @@
     pointer-events: all;
 }
 
+@media screen and (max-width: 1440px) {
+    .section-top {
+        padding: 30px 0;
+    }
+    .section-top-logo {
+        height: 45px;
+    }
+    .section-top-menu-container > li a,
+    .section-top-button a {
+        padding: 9px 17px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .section-top-menu-wrapper {
+        position: fixed;
+        z-index: 10000;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: white;
+
+    }
+}

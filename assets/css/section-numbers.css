@@ -28,7 +28,7 @@
     display: inline-block;
     margin: auto;
     font: var(--title-font);
-    font-size: var(--numbers-font-size);
+    font-size: 70px;
     padding: 0 50px;
     border-radius: 100px;
     box-shadow: 0 14px 4px #ffffff70;
