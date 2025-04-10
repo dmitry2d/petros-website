@@ -9,12 +9,17 @@
     overflow: hidden;
     position: relative;
 }
+.section-hero-images-wrapper {
+    height: 100%;
+    position: absolute;
+    inset: 0;
+}
 .section-hero-images {
     display: flex;
-    height: 100%;
     opacity: 0;
     visibility: hidden;
     transition: opacity 1s ease;
+    height: 100%;
 }
 .section-hero-image img {
     width: 100%;
@@ -24,4 +29,102 @@
 .section-hero-images.slick-initialized {
     visibility: visible;
     opacity: 1;    
+}
+.section-hero-container {
+    height: 100%;
+}
+.section-hero-data {
+    position: absolute;
+    inset: 80px 0;
+    display: flex;
+}
+.section-hero-data-left {
+    min-width: 50%;
+    padding-left: 50px;
+}
+.section-hero-data-left-wrapper {
+    height: 100%;
+    width: 100%;
+    max-width: 600px;
+    background: #ffffffc0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px 80px;
+    border-radius: 40px;
+    box-shadow: inset 0 0 40px #ffffffd0;
+    backdrop-filter: blur(20px);
+}
+
+.section-hero-data-title {
+    font: var(--title-font);
+}
+.section-hero-data-text {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.5;
+}
+.section-hero-data-divider {
+    height: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+    background: linear-gradient(180deg, var(--theme-color-secondary-light), var(--theme-color-secondary));
+    width: 100%;
+}
+
+.section-hero-data-right {
+    min-width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 80px;
+}
+.section-hero-images-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.section-hero-images-controls-dots ul {
+    display: flex;
+    gap: 13px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    align-items: center;
+}
+.section-hero-images-controls-dots ul button {
+    display: flex;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 13px;
+    height: 13px;
+    color: transparent;
+}
+.section-hero-images-controls-dots ul li.slick-active button {
+    width: 23px;
+    height: 23px;
+}
+.section-hero-images-controls-left,
+.section-hero-images-controls-right {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, var(--theme-color-secondary-light), var(--theme-color-secondary));
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-hero-images-controls-left img,
+.section-hero-images-controls-right img {
+    width: 11px;
+}
+.section-hero-images-controls-right img {
+    transform: scaleX(-1);
 }

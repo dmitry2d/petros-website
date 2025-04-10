@@ -1,0 +1,10 @@
+body .wpcf7 form .wpcf7-response-output {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid var(--theme-color-secondary);
+    border-radius: 20px;
+}
+
+body .wpcf7-not-valid-tip {
+    padding: 15px 0;
+}

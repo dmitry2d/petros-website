@@ -5,20 +5,42 @@
 ?>
 
     <div class="section-hero-wrapper">
-        <div class="section-hero-images">
 
-        <?php foreach ($images as $image) { ?>
+        <div class="section-hero-images-wrapper">
+            <div class="section-hero-images">
+                <?php foreach ($images as $image) { ?>
 
-            <div class="section-hero-image">
-                <img src="<?=$image?>">
+                    <div class="section-hero-image">
+                        <img src="<?=$image?>">
+                    </div>
+
+                <?php } ?>
             </div>
-
-        <?php } ?>
-
         </div>
-        <div class="container">
+        <div class="container section-hero-container">
             <div class="section-hero-data">
-                text
+                <div class="section-hero-data-left">
+                    <div class="section-hero-data-left-wrapper">
+                        <div class="section-hero-data-title">
+                            <?= get_field('site_settings_hero_section_title')?>
+                        </div>
+                        <div class="section-hero-data-divider"></div>
+                        <div class="section-hero-data-text">
+                        <?= get_field('site_settings_hero_section_description')?>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-hero-data-right">
+                    <div class="section-hero-images-controls">
+                        <div class="section-hero-images-controls-left">
+                            <img src="<?= get_template_directory_uri()?>/assets/img/arr_white_01.svg" alt="">
+                        </div>
+                        <div class="section-hero-images-controls-dots"></div>
+                        <div class="section-hero-images-controls-right">
+                            <img src="<?= get_template_directory_uri()?>/assets/img/arr_white_01.svg" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -29,8 +51,15 @@
 <script>
     $(document).ready(function(){
         $('.section-hero-images').slick({
-            // prevArrow: '<div class="project-photo__items__prev-arrow"></div>',
-            // nextArrow: '<div class="project-photo__items__next-arrow"></div>'
+            prevArrow: null,
+            nextArrow: null,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 600,
+            dots: true,
+            appendDots: $('.section-hero-images-controls-dots'),
+            prevArrow: $('.section-hero-images-controls-left'),
+            nextArrow: $('.section-hero-images-controls-right')
         });
     });
 

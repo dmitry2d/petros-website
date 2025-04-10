@@ -1,0 +1,75 @@
+.section-contact {
+    padding: 0 0 160px 0;
+    background: var(--theme-color-light) linear-gradient(0deg, #ffffff50, #ffffff00 60%);
+    text-align: center;
+}
+.section-contact-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 550px;
+}
+.section-contact-form-wrapper {
+    background: white;
+    border-radius: 30px;
+    filter: drop-shadow(0px 48px 34px #172D7926) drop-shadow(0px 24px 14px #ffffff50);
+    padding: 80px 60px 50px;
+}
+.section-contact-form-fields p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.section-contact-form-fields .contact-form-fields p span.wpcf7-form-control-wrap {
+    display: block;
+    flex-grow: 1;
+    flex-basis: 25%;
+    padding: 0;
+    margin: 0;
+}
+.section-contact-form-fields p {
+    margin: 0;
+    padding: 0;
+}
+
+.section-contact-form-fields .contact-form-fields {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.section-contact-form-fields .contact-form-fields p span.wpcf7-form-control-wrap input {
+    width: 100%;
+    background: none;
+    outline: none;
+    border: 2px solid var(--theme-color-primary);
+    padding: 21px 30px;
+    border-radius: 15px;
+    font: var(--main-font);
+    box-shadow: 0 24px 14px rgb(from var(--theme-color-secondary) r g b / 0.2);
+    text-align: center;
+    color: var(--theme-color-primary);
+}
+.section-contact-form-fields .contact-form-fields p span.wpcf7-form-control-wrap input:focus {
+    border: 2px solid var(--theme-color-secondary);
+}
+.section-contact-form-fields .contact-form-fields p span.wpcf7-form-control-wrap input::placeholder {
+    color: var(--theme-color-primary);
+}
+.section-contact-form-fields .wpcf7-spinner {
+    display: none;
+}
+.section-contact-form-intro {
+    max-width: 600px;
+    margin: auto;
+}
+
+.section-contact-form-fields .wpcf7-submit {
+    border: none;
+    outline: none;
+    background: linear-gradient(180deg, var(--theme-color-secondary-light), var(--theme-color-secondary));
+    padding: 21px 80px;
+    border-radius: 15px;
+    font: var(--main-font);
+    color: white;
+    box-shadow: 0 24px 14px rgb(from var(--theme-color-secondary) r g b / 0.2);
+}
