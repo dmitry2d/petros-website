@@ -21,10 +21,12 @@
             <div class="section-hero-data">
                 <div class="section-hero-data-left">
                     <div class="section-hero-data-left-wrapper">
-                        <div class="section-hero-data-title">
-                            <?= get_field('site_settings_hero_section_title')?>
-                        </div>
-                        <div class="section-hero-data-divider"></div>
+                        <!-- <div class="section-hero-data-title"> -->
+                            <h1 class="section-hero-data-title">
+                                <?= get_field('site_settings_hero_section_title')?>
+                            </h1>
+                        <!-- </div> -->
+                        <!-- <div class="section-hero-data-divider"></div> -->
                         <div class="section-hero-data-text">
                         <?= get_field('site_settings_hero_section_description')?>
                         </div>

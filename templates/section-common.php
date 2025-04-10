@@ -29,6 +29,12 @@
             --main-font: 200 19px/1.3 var(--main-font-family);
         }
     }
+    @media screen and (max-width: 720px) {
+        :root {
+            --title-font: 400 28px/1.3 var(--title-font-family);
+            --main-font: 200 18px/1.3 var(--main-font-family);
+        }
+    }
 
 </style>
 

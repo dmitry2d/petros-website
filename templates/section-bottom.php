@@ -4,10 +4,11 @@
 
         <div class="section-bottom-wrapper">
             <div class="section-bottom-left">
-                <img src="<?=get_field('site_settings_menu_logo')?>" class="section-bottom-logo">
-                
-                <div class="section-bottom-slogan">
-                    Building the Extraordinary.
+                <div>
+                    <img src="<?=get_field('site_settings_menu_logo')?>" class="section-bottom-logo">
+                    <div class="section-bottom-slogan">
+                        Building the Extraordinary.
+                    </div>
                 </div>
                 <div class="section-bottom-left-socials">
                     <a href="<?=get_field('site_settings_bottom_section_social_fb')?>">
